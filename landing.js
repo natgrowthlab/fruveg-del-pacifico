@@ -1,4 +1,8 @@
 const preloader = document.querySelector('.skiper10-preloader');
+document.querySelectorAll('img[src="resources/piña.jpeg"]').forEach((image) => {
+  image.src = 'resources/pina-md2-editorial.png';
+  image.alt = 'Piña MD2 fresca, seleccionada para exportación';
+});
 window.addEventListener('load', () => window.setTimeout(() => preloader?.classList.add('is-done'), 900));
 
 const revealTargets = document.querySelectorAll('section > *, .product-card, footer > *');
