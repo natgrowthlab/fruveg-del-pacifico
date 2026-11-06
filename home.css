@@ -29,3 +29,9 @@
   .header-tools .button-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
   .figma-home-header .contact-pill,.figma-home-header .mobile-menu{min-width:38px;justify-content:center}
 }
+
+@media(max-width:760px){
+  .figma-home-header #main-nav{display:none}
+  .figma-home-header #main-nav.open{display:flex}
+  .figma-home-hero{min-height:100svh;height:100svh}
+}
