@@ -15,11 +15,10 @@ const revealObserver = new IntersectionObserver((entries) => entries.forEach(({ 
 }), { threshold: .12 });
 document.querySelectorAll('.scroll-reveal').forEach(element => revealObserver.observe(element));
 
-const trail = document.querySelector('.skiper19-trail path');
+document.querySelector('.skiper19-trail')?.remove();
 const hero = document.querySelector('.hero');
 const updateScrollEffects = () => {
   const progress = window.scrollY / Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
-  if (trail) trail.style.strokeDashoffset = `${progress * -260}`;
   if (hero) hero.style.backgroundPosition = `center ${progress * 18}px`;
   document.querySelectorAll('.skiper16-stack .product-card').forEach((card, index) => {
     const rect = card.getBoundingClientRect();
