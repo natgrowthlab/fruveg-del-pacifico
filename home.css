@@ -53,3 +53,46 @@
 .home-contact-form .cream-button:hover{background:var(--cta);color:var(--ink)}
 .home-contact-form .form-note{margin:12px 0 0;font-size:11px}
 @media(max-width:760px){.product-row--centered{grid-template-columns:1fr;margin-top:37px}.home-contact-form{grid-column:auto;padding:25px 20px}.home-form-grid{grid-template-columns:1fr;gap:16px}}
+
+/* Escala intermedia: portátiles compactos y pantallas de escritorio angostas. */
+@media (min-width:761px) and (max-width:1200px){
+  .loose-container,.nav-wrap,.hero-content{width:min(100% - 48px,1370px)}
+  .figma-home-hero .hero-content{padding-top:clamp(120px,16vh,155px);padding-bottom:118px}
+  .hero h1{font-size:clamp(64px,8vw,98px);line-height:.82;margin:18px 0 30px}
+  .hero-bottom p{max-width:360px;font-size:15px}
+  .hero-reliability{bottom:26px}
+  .intro-band{padding:92px 0 84px}
+  .intro-grid{grid-template-columns:.48fr 1.3fr .8fr;gap:28px}
+  .intro-grid h2,.feature-copy h2,.story-split h2,.contact-layout h2{font-size:clamp(50px,6.3vw,76px);line-height:.88}
+  .intro-grid>div p,.feature-copy>p:not(.micro),.story-split p:not(.micro){font-size:15px}
+  .product-feature,.story-split{gap:5vw}
+  .product-feature img{height:480px}
+  .story-split img{height:500px}
+  .contact-band{padding:82px 0}
+  .footer-grid{gap:24px}
+}
+@media (min-width:761px) and (max-width:980px){
+  .figma-home-header #main-nav{gap:25px}
+  .intro-grid{grid-template-columns:.42fr 1fr}
+  .intro-grid>div{grid-column:2;padding-top:0}
+  .product-feature,.story-split{gap:32px}
+  .feature-copy h2{font-size:clamp(48px,6.4vw,64px)}
+  .product-feature img{height:425px}
+  .story-split img{height:450px}
+  .footer-grid{grid-template-columns:1.25fr .75fr 1fr}
+}
+@media (min-width:761px) and (max-height:820px){
+  .figma-home-hero .hero-content{padding-top:112px;padding-bottom:105px}
+  .hero h1{font-size:clamp(62px,7.5vw,88px);margin-bottom:24px}
+  .hero-bottom p{margin-bottom:17px}
+}
+
+/* El contenido del pie nunca desborda en dispositivos estrechos. */
+footer .footer-grid,footer .footer-grid>div{min-width:0}
+footer .footer-grid a{max-width:100%;overflow-wrap:anywhere}
+@media(max-width:760px){
+  footer{overflow:hidden;padding-top:48px}
+  footer .wordmark{width:150px;height:58px;flex-basis:150px}
+  .footer-grid{padding-bottom:34px}
+  .copyright{overflow-wrap:anywhere}
+}
