@@ -39,3 +39,17 @@
 .hero-reliability{position:absolute;z-index:2;left:4.2%;bottom:45px;display:flex;align-items:center;gap:11px;padding:12px 18px;border:1px solid rgba(255,255,255,.25);border-radius:999px;background:rgba(17,28,14,.28);color:#fff;backdrop-filter:blur(10px);font-size:12px}
 .reliability-score{font-weight:700}.reliability-stars{color:#efb334;letter-spacing:1px}.hero-reliability span:last-child{color:rgba(255,255,255,.82)}
 @media(max-width:760px){.hero-reliability{left:17px;bottom:27px;gap:8px;padding:10px 13px;font-size:10px}.reliability-stars{font-size:11px}}
+
+/* Portafolio centrado y formulario comercial dentro de Inicio. */
+.product-row--centered{grid-template-columns:repeat(3,minmax(0,1fr));max-width:1100px;margin:37px auto 0}
+.product-row--centered article:nth-child(2),.product-row--centered article:nth-child(3){padding-top:0}
+.product-row--centered .limon-photo{object-position:38% 76%}
+.home-contact-form{grid-column:span 2;padding:32px;background:var(--cream);box-shadow:0 16px 36px rgba(60,66,46,.13)}
+.home-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px}
+.home-contact-form label{display:flex;flex-direction:column;gap:7px;font-size:12px;font-weight:700}
+.home-contact-form input,.home-contact-form select,.home-contact-form textarea{width:100%;border:0;border-bottom:1px solid rgba(60,66,46,.42);outline:0;background:transparent;padding:8px 0;color:var(--ink);font:14px var(--body)}
+.home-contact-form textarea{resize:vertical}
+.home-contact-form .cream-button{background:var(--ink);color:var(--cream);cursor:pointer}
+.home-contact-form .cream-button:hover{background:var(--cta);color:var(--ink)}
+.home-contact-form .form-note{margin:12px 0 0;font-size:11px}
+@media(max-width:760px){.product-row--centered{grid-template-columns:1fr;margin-top:37px}.home-contact-form{grid-column:auto;padding:25px 20px}.home-form-grid{grid-template-columns:1fr;gap:16px}}

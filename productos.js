@@ -13,12 +13,12 @@ const productData = {
     description: 'Raíz fresca seleccionada para una cadena de suministro eficiente y una presentación cuidada.',
     specs: [['Origen', 'Panamá'], ['Presentación', 'Bajo consulta'], ['Formato', 'Fresco'], ['Disponibilidad', 'Sujeta a temporada y volumen']]
   },
-  aguacate: {
-    name: 'Aguacate Hass',
-    image: 'resources/aguacate-hass-editorial.png',
-    alt: 'Aguacate Hass fresco',
-    description: 'Aguacate de pulpa cremosa y color intenso, disponible de acuerdo con calibre y programa comercial.',
-    specs: [['Origen', 'Bajo consulta'], ['Presentación', 'Bajo consulta'], ['Calibre', 'Bajo consulta'], ['Disponibilidad', 'Sujeta a temporada y volumen']]
+  limon: {
+    name: 'Limón Tahití',
+    image: 'resources/hero-yuca-prominente.png',
+    alt: 'Limón Tahití fresco',
+    description: 'Limón Tahití importado para atender las necesidades de abastecimiento del mercado panameño.',
+    specs: [['Operación', 'Importación a Panamá'], ['Presentación', 'Bajo consulta'], ['Calibre', 'Bajo consulta'], ['Disponibilidad', 'Sujeta a programa y volumen']]
   }
 };
 

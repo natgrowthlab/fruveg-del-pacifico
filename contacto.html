@@ -24,9 +24,9 @@
 
     <section class="contact-content">
       <div class="contact-copy"><p class="eyebrow">CONSULTA COMERCIAL</p><h1>Hablemos de<br><em>tu mercado.</em></h1><p>Cuéntanos qué producto necesitas y abre un chat directo con nuestro equipo comercial en WhatsApp.</p><div class="quick-contacts"><a href="https://wa.me/50762647738" target="_blank" rel="noopener"><span aria-hidden="true">◉</span> WhatsApp</a><a href="mailto:comercial@fruvegdelpacifico.com"><span aria-hidden="true">✉</span> Correo comercial</a></div></div>
-      <form id="whatsapp-form" class="contact-form">
+      <form id="whatsapp-form" class="contact-form" data-whatsapp-form>
         <p class="form-kicker">* DETALLES DE LA CONSULTA</p>
-        <div class="form-grid"><label>Nombre<input name="nombre" autocomplete="name" required></label><label>Empresa<input name="empresa" autocomplete="organization"></label><label>País o mercado<input name="mercado" required></label><label>Producto<select name="producto" id="consulta-producto" required><option value="">Selecciona un producto</option><option>Piña MD2</option><option>Yuca</option><option>Aguacate Hass</option><option>Otro producto</option></select></label><label>Volumen estimado<input name="volumen" placeholder="Ej. 1 contenedor / 500 cajas"></label><label>Correo o teléfono<input name="contacto" required></label></div>
+        <div class="form-grid"><label>Nombre<input name="nombre" autocomplete="name" required></label><label>Empresa<input name="empresa" autocomplete="organization"></label><label>País o mercado<input name="mercado" required></label><label>Producto<select name="producto" id="consulta-producto" required><option value="">Selecciona un producto</option><option>Piña MD2</option><option>Yuca</option><option value="Limón Tahití">Limón Tahití · importado a Panamá</option><option>Otro producto</option></select></label><label>Volumen estimado<input name="volumen" placeholder="Ej. 1 contenedor / 500 cajas"></label><label>Correo o teléfono<input name="contacto" required></label></div>
         <label>Mensaje adicional<textarea name="mensaje" rows="3" placeholder="Presentación, calibre, fecha estimada u otro detalle."></textarea></label>
         <button type="submit"><span aria-hidden="true">◉</span> Continuar en WhatsApp</button>
         <p class="form-note">Al enviar, se abrirá WhatsApp con el resumen de tu consulta listo para enviar a Fruveg del Pacífico.</p>
@@ -34,6 +34,7 @@
     </section>
   </main>
   <footer class="contact-footer"><a href="https://wa.me/50762647738" target="_blank" rel="noopener">WhatsApp: +507 6264-7738</a><a href="mailto:comercial@fruvegdelpacifico.com">comercial@fruvegdelpacifico.com</a></footer>
+  <script src="formulario.js"></script>
   <script src="contacto.js"></script>
 </body>
 </html>
