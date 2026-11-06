@@ -1,0 +1,7 @@
+.language-switch{display:inline-flex;align-items:center;min-height:38px;padding:0 8px;border:1px solid rgba(255,255,255,.45);border-radius:999px;background:rgba(9,18,10,.18);color:#fff}
+.language-switch select{border:0;outline:0;background:transparent;color:inherit;font:600 11px Poppins,Arial,sans-serif;letter-spacing:.06em;cursor:pointer}
+.language-switch option{background:#173424;color:#fff}
+.contact-tools{justify-self:end;display:flex;align-items:center;gap:10px}
+.shipping-banner{position:fixed;z-index:30;right:24px;bottom:24px;display:flex;align-items:center;gap:9px;max-width:calc(100% - 48px);padding:11px 15px;border:1px solid rgba(255,255,255,.35);border-radius:999px;background:rgba(20,40,24,.88);box-shadow:0 12px 28px rgba(0,0,0,.2);color:#fff;backdrop-filter:blur(12px);font:600 12px/1.2 Poppins,Arial,sans-serif}
+.shipping-banner span:first-child{color:#f5b234;font-size:15px;letter-spacing:2px}
+@media(max-width:760px){.language-switch{min-height:36px;padding:0 6px}.shipping-banner{right:auto;bottom:14px;left:17px;max-width:calc(100% - 34px);padding:10px 13px;font-size:10px}.shipping-banner span:first-child{font-size:13px}}

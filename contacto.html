@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="contacto.css">
+  <link rel="stylesheet" href="ui.css">
 </head>
 <body>
   <main class="contact-page">
@@ -19,7 +20,7 @@
     <header class="contact-nav">
       <nav id="contact-nav" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="productos.html">Productos</a><a href="index.html#nosotros">Nosotros</a></nav>
       <a class="contact-logo" href="index.html" aria-label="Fruveg del Pacífico, inicio"><img src="resources/logo-olive.png" alt="Fruveg del Pacífico Agroexportadora"></a>
-      <button class="contact-menu" aria-controls="contact-nav" aria-expanded="false" aria-label="Abrir menú"><span aria-hidden="true">☰</span><span>Menú</span></button>
+      <div class="contact-tools"><label class="language-switch" aria-label="Seleccionar idioma"><select data-language-selector><option value="es">ES</option><option value="en">EN</option></select></label><button class="contact-menu" aria-controls="contact-nav" aria-expanded="false" aria-label="Abrir menú"><span aria-hidden="true">☰</span><span>Menú</span></button></div>
     </header>
 
     <section class="contact-content">
@@ -34,7 +35,9 @@
     </section>
   </main>
   <footer class="contact-footer"><a href="https://wa.me/50762647738" target="_blank" rel="noopener">WhatsApp: +507 6264-7738</a><a href="mailto:comercial@fruvegdelpacifico.com">comercial@fruvegdelpacifico.com</a></footer>
+  <div class="shipping-banner" role="status"><span aria-hidden="true">⚓ ✈</span><span>Exportación marítima y aérea</span></div>
   <script src="formulario.js"></script>
   <script src="contacto.js"></script>
+  <script src="idioma.js"></script>
 </body>
 </html>

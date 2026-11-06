@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="productos.css">
+  <link rel="stylesheet" href="ui.css">
 </head>
 <body>
   <main class="products-figma" aria-label="Productos Fruveg del Pacífico">
@@ -19,7 +20,7 @@
     <header class="products-nav">
       <nav id="products-nav" aria-label="Navegación principal"><a href="index.html#inicio">Inicio</a><a class="active" href="productos.html">Productos</a><a href="index.html#nosotros">Nosotros</a></nav>
       <a class="products-logo" href="index.html" aria-label="Fruveg del Pacífico, inicio"><img src="resources/logo-olive.png" alt="Fruveg del Pacífico Agroexportadora"></a>
-      <div class="nav-tools"><a class="contact-button" href="index.html#contacto" aria-label="Ir al formulario comercial"><span aria-hidden="true">✉</span><span class="button-label">Contacto</span></a><button class="menu-button" aria-controls="products-nav" aria-expanded="false" aria-label="Abrir menú"><span aria-hidden="true">☰</span><span class="button-label">Menú</span></button></div>
+      <div class="nav-tools"><label class="language-switch" aria-label="Seleccionar idioma"><select data-language-selector><option value="es">ES</option><option value="en">EN</option></select></label><a class="contact-button" href="index.html#contacto" aria-label="Ir al formulario comercial"><span aria-hidden="true">✉</span><span class="button-label">Contacto</span></a><button class="menu-button" aria-controls="products-nav" aria-expanded="false" aria-label="Abrir menú"><span aria-hidden="true">☰</span><span class="button-label">Menú</span></button></div>
     </header>
 
     <section class="products-intro">
@@ -43,11 +44,13 @@
   </main>
 
   <footer class="products-footer"><a href="https://wa.me/50762647738" target="_blank" rel="noopener">WhatsApp: +507 6264-7738</a><a href="mailto:comercial@fruvegdelpacifico.com">comercial@fruvegdelpacifico.com</a></footer>
+  <div class="shipping-banner" role="status"><span aria-hidden="true">⚓ ✈</span><span>Exportación marítima y aérea</span></div>
 
   <dialog id="product-dialog" class="product-dialog" aria-labelledby="dialog-product-name">
     <button class="dialog-close" aria-label="Cerrar ficha técnica">×</button>
     <div class="dialog-layout"><img id="dialog-image" src="" alt=""><div><p class="micro">FICHA TÉCNICA · REFERENCIAL</p><h2 id="dialog-product-name"></h2><p id="dialog-description" class="dialog-description"></p><dl id="dialog-specs"></dl><a class="dialog-contact" href="contacto.html"><span aria-hidden="true">✉</span> Solicitar información comercial</a></div></div>
   </dialog>
+  <script src="idioma.js"></script>
   <script src="productos.js"></script>
 </body>
 </html>
