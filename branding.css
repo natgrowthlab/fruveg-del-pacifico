@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&display=swap');
+
+:root { --body: 'Poppins', Arial, sans-serif; --display: 'Poppins', Arial, sans-serif; }
+body, button, input, textarea, select { font-family: var(--body); }
+h1, h2, h3, .hero h1, .intro-grid h2, .feature-copy h2, .story-split h2, .contact-layout h2 { font-family: var(--display); }
+
+/* The supplied brand mark is used consistently, with an olive version on light surfaces. */
+.wordmark, .brand { background: url('resources/logo-olive.png') left center / contain no-repeat; font-size: 0 !important; line-height: 0; }
+.wordmark { width: 150px; height: 60px; flex: 0 0 150px; }
+.brand { width: 178px; height: 58px; flex: 0 0 178px; }
+.wordmark > *, .brand-mark { display: none !important; }
+footer .wordmark, footer .brand { filter: brightness(0) invert(1); }
+footer .wordmark { width: 178px; height: 68px; flex-basis: 178px; }
+footer .brand { width: 190px; height: 64px; flex-basis: 190px; }
+
+@media (max-width: 760px) {
+  .wordmark { width: 128px; height: 52px; flex-basis: 128px; }
+  .brand { width: 145px; height: 50px; flex-basis: 145px; }
+}
