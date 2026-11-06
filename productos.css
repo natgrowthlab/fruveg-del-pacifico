@@ -71,3 +71,8 @@ h1 { margin: 0; color: var(--white); font-size: clamp(55px,7.2vw,110px); font-we
 .reliability-score { font-weight: 700; }.reliability-stars { color: #efb334; letter-spacing: 1px; }.hero-reliability span:last-child { color: rgba(255,255,255,.82); }
 @media (max-width:1100px) { .product-reliability { position: relative; bottom: auto; left: auto; width: max-content; max-width: calc(100% - 44px); margin: 0 22px 33px; } }
 @media (max-width:680px) { .hero-reliability { gap: 8px; padding: 10px 13px; font-size: 10px; }.reliability-stars { font-size: 11px; } }
+
+@media (max-width:680px) {
+  .details-trigger { min-width: auto; padding: 8px 10px; }
+  .details-trigger .button-label { position: static; width: auto; height: auto; overflow: visible; clip: auto; }
+}
