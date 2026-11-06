@@ -1,7 +1,7 @@
 const productData = {
   pina: {
     name: 'Piña MD2',
-    image: 'resources/pina-md2-fruveg-editorial.png',
+    image: 'resources/pina-md2-natural-editorial.png',
     alt: 'Piña MD2 fresca',
     description: 'Piña tropical seleccionada por su dulzor, color de pulpa y condición de llegada.',
     specs: [['Origen', 'Panamá'], ['Presentación', 'Bajo consulta'], ['Calibre', 'Bajo consulta'], ['Disponibilidad', 'Sujeta a temporada y volumen']]
@@ -15,7 +15,7 @@ const productData = {
   },
   limon: {
     name: 'Limón Tahití',
-    image: 'resources/hero-yuca-prominente.png',
+    image: 'resources/limon-tahiti-editorial.png',
     alt: 'Limón Tahití fresco',
     description: 'Limón Tahití importado para atender las necesidades de abastecimiento del mercado panameño.',
     specs: [['Operación', 'Importación a Panamá'], ['Presentación', 'Bajo consulta'], ['Calibre', 'Bajo consulta'], ['Disponibilidad', 'Sujeta a programa y volumen']]

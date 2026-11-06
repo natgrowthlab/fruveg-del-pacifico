@@ -43,7 +43,7 @@
 /* Portafolio centrado y formulario comercial dentro de Inicio. */
 .product-row--centered{grid-template-columns:repeat(4,minmax(0,1fr));max-width:1280px;margin:37px auto 0}
 .product-row--centered article:nth-child(2),.product-row--centered article:nth-child(3){padding-top:0}
-.product-row--centered .limon-photo{object-position:38% 76%}
+.product-row--centered .limon-photo{object-position:center}
 .home-contact-form{grid-column:span 2;padding:32px;background:var(--cream);box-shadow:0 16px 36px rgba(60,66,46,.13)}
 .home-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px}
 .home-contact-form label{display:flex;flex-direction:column;gap:7px;font-size:12px;font-weight:700}
@@ -53,6 +53,10 @@
 .home-contact-form .cream-button:hover{background:var(--cta);color:var(--ink)}
 .home-contact-form .form-note{margin:12px 0 0;font-size:11px}
 @media(max-width:760px){.product-row--centered{grid-template-columns:1fr;margin-top:37px}.home-contact-form{grid-column:auto;padding:25px 20px}.home-form-grid{grid-template-columns:1fr;gap:16px}}
+.future-product-image{position:relative;overflow:hidden;border-radius:20px}
+.future-product-image img{margin:0}
+.future-product-image::after{position:absolute;inset:0;content:"";background:linear-gradient(180deg,rgba(20,35,17,.08),rgba(20,35,17,.72))}
+.future-product-image span{position:absolute;z-index:1;top:50%;left:50%;color:var(--cream);font-size:clamp(20px,2.1vw,30px);font-weight:600;letter-spacing:-.04em;text-shadow:0 2px 16px rgba(0,0,0,.45);transform:translate(-50%,-50%)}
 
 /* Escala intermedia: portátiles compactos y pantallas de escritorio angostas. */
 @media (min-width:761px) and (max-width:1200px){
