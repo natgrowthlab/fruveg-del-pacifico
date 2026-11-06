@@ -1,4 +1,11 @@
 const preloader = document.querySelector('.skiper10-preloader');
+const menuButton = document.querySelector('.mobile-menu');
+const mainNavigation = document.querySelector('#main-nav');
+menuButton?.addEventListener('click', () => {
+  const isOpen = mainNavigation?.classList.toggle('open');
+  menuButton.setAttribute('aria-expanded', String(isOpen));
+  menuButton.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+});
 document.querySelectorAll('img[src="resources/piña.jpeg"]').forEach((image) => {
   image.src = 'resources/pina-md2-editorial.png';
   image.alt = 'Piña MD2 fresca, seleccionada para exportación';
