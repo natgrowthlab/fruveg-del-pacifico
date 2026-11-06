@@ -66,3 +66,8 @@ h1 { margin: 0; color: var(--white); font-size: clamp(55px,7.2vw,110px); font-we
   dl div { grid-template-columns: 1fr; gap: 2px; padding: 12px 0; font-size: 14px; }
   .dialog-contact { width: 100%; padding: 14px; text-align: center; }
 }
+
+.hero-reliability { position: absolute; z-index: 2; bottom: 211px; left: 4.2%; display: flex; align-items: center; gap: 11px; padding: 12px 18px; border: 1px solid rgba(255,255,255,.25); border-radius: 999px; background: rgba(17,28,14,.28); color: #fff; backdrop-filter: blur(10px); font-size: 12px; }
+.reliability-score { font-weight: 700; }.reliability-stars { color: #efb334; letter-spacing: 1px; }.hero-reliability span:last-child { color: rgba(255,255,255,.82); }
+@media (max-width:1100px) { .product-reliability { position: relative; bottom: auto; left: auto; width: max-content; max-width: calc(100% - 44px); margin: 0 22px 33px; } }
+@media (max-width:680px) { .hero-reliability { gap: 8px; padding: 10px 13px; font-size: 10px; }.reliability-stars { font-size: 11px; } }

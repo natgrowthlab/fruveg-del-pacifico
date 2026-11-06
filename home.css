@@ -35,3 +35,7 @@
   .figma-home-header #main-nav.open{display:flex}
   .figma-home-hero{min-height:100svh;height:100svh}
 }
+
+.hero-reliability{position:absolute;z-index:2;left:4.2%;bottom:45px;display:flex;align-items:center;gap:11px;padding:12px 18px;border:1px solid rgba(255,255,255,.25);border-radius:999px;background:rgba(17,28,14,.28);color:#fff;backdrop-filter:blur(10px);font-size:12px}
+.reliability-score{font-weight:700}.reliability-stars{color:#efb334;letter-spacing:1px}.hero-reliability span:last-child{color:rgba(255,255,255,.82)}
+@media(max-width:760px){.hero-reliability{left:17px;bottom:27px;gap:8px;padding:10px 13px;font-size:10px}.reliability-stars{font-size:11px}}
