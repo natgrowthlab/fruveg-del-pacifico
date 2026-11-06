@@ -1,7 +1,7 @@
 const productData = {
   pina: {
     name: 'Piña MD2',
-    image: 'resources/pina-md2-editorial.png',
+    image: 'resources/pina-md2-fruveg-editorial.png',
     alt: 'Piña MD2 fresca',
     description: 'Piña tropical seleccionada por su dulzor, color de pulpa y condición de llegada.',
     specs: [['Origen', 'Panamá'], ['Presentación', 'Bajo consulta'], ['Calibre', 'Bajo consulta'], ['Disponibilidad', 'Sujeta a temporada y volumen']]

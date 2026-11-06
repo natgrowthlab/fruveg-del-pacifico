@@ -38,7 +38,7 @@ h1 { margin: 0; color: var(--white); font-size: clamp(55px,7.2vw,110px); font-we
 .stars { display: flex; gap: 2px; color: #fff; letter-spacing: 1px; }.stars i { color: rgba(255,255,255,.4); font-style: normal; }
 .scroll-cue { position: absolute; top: 45%; right: 3.1%; display: flex; flex-direction: column; align-items: center; gap: 8px; margin: 0; color: rgba(255,255,255,.8); font-size: 10px; letter-spacing: .13em; text-transform: uppercase; writing-mode: vertical-rl; }.scroll-cue span { color: var(--orange); font-size: 18px; }
 
-.product-glassbar { position: absolute; bottom: 0; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 42px; width: 100%; padding: 38px max(7%,calc((100% - 1180px)/2)) 39px; border-radius: 70px 70px 0 0; background: rgba(255,255,255,.12); backdrop-filter: blur(16px); }
+.product-glassbar { position: absolute; bottom: 0; display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 30px; width: 100%; padding: 38px max(7%,calc((100% - 1180px)/2)) 39px; border-radius: 70px 70px 0 0; background: rgba(255,255,255,.12); backdrop-filter: blur(16px); }
 .figma-product-card { display: grid; grid-template-columns: minmax(92px,130px) 1fr; align-items: center; gap: 20px; min-width: 0; transition: opacity .25s, transform .25s; }
 .figma-product-card[hidden] { display: none; }
 .product-photo { width: min(100%,130px); aspect-ratio: 1; object-fit: cover; border-radius: 50%; box-shadow: 0 14px 18px rgba(0,0,0,.28); transition: transform .35s ease; }.figma-product-card:hover .product-photo { transform: rotate(-3deg) scale(1.04); }
@@ -81,6 +81,6 @@ h1 { margin: 0; color: var(--white); font-size: clamp(55px,7.2vw,110px); font-we
 .products-footer { display: flex; justify-content: center; gap: 30px; padding: 22px 6%; background: var(--ink); }
 .products-footer a { color: #fff; font-size: 12px; text-decoration: none; }.products-footer a:hover { color: var(--orange); }
 @media (max-width:680px) { .products-footer { flex-direction: column; gap: 9px; padding: 20px 7%; text-align: center; } }
-@media (min-width:681px) and (max-width:1100px) { .product-glassbar { grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; padding:32px 4%; } .figma-product-card { grid-template-columns:92px 1fr; gap:14px; } .product-photo { width:92px; } }
+@media (min-width:681px) and (max-width:1100px) { .product-glassbar { grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; padding:32px 8%; } .figma-product-card { grid-template-columns:92px 1fr; gap:14px; } .product-photo { width:92px; } }
 
 .products-footer a{max-width:100%;overflow-wrap:anywhere}
