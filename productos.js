@@ -36,6 +36,7 @@ document.querySelectorAll('.details-trigger[data-product]').forEach((trigger) =>
     dialogImage.alt = item.alt;
     dialogName.textContent = item.name;
     dialogDescription.textContent = item.description;
+    document.querySelector('.dialog-contact').href = `contacto.html?producto=${encodeURIComponent(item.name)}`;
     dialogSpecs.replaceChildren(...item.specs.map(([label, value]) => {
       const row = document.createElement('div');
       const term = document.createElement('dt');

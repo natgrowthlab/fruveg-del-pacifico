@@ -12,7 +12,7 @@ h1, h2, h3, .hero h1, .intro-grid h2, .feature-copy h2, .story-split h2, .contac
 footer .wordmark, footer .brand { filter: brightness(0) invert(1); }
 footer .wordmark { width: 178px; height: 68px; flex-basis: 178px; }
 footer .brand { width: 190px; height: 64px; flex-basis: 190px; }
-footer .footer-grid { grid-template-columns: 1.6fr .7fr; }
+footer .footer-grid { grid-template-columns: 1.6fr .7fr 1fr; }
 
 @media (max-width: 760px) {
   .wordmark { width: 128px; height: 52px; flex-basis: 128px; }

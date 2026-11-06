@@ -76,3 +76,7 @@ h1 { margin: 0; color: var(--white); font-size: clamp(55px,7.2vw,110px); font-we
   .details-trigger { min-width: auto; padding: 8px 10px; }
   .details-trigger .button-label { position: static; width: auto; height: auto; overflow: visible; clip: auto; }
 }
+
+.products-footer { display: flex; justify-content: center; gap: 30px; padding: 22px 6%; background: var(--ink); }
+.products-footer a { color: #fff; font-size: 12px; text-decoration: none; }.products-footer a:hover { color: var(--orange); }
+@media (max-width:680px) { .products-footer { flex-direction: column; gap: 9px; padding: 20px 7%; text-align: center; } }
