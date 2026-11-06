@@ -53,8 +53,9 @@ document.querySelector('.dialog-close').addEventListener('click', () => dialog.c
 dialog.addEventListener('click', (event) => { if (event.target === dialog) dialog.close(); });
 
 const filter = document.querySelector('#product-filter');
-const cards = [...document.querySelectorAll('.catalogue-card')];
-const noResults = document.querySelector('#no-results');
+const cards = [...document.querySelectorAll('.figma-product-card')];
+const searchStatus = document.querySelector('#search-status');
+document.querySelector('.product-search').addEventListener('submit', (event) => event.preventDefault());
 filter.addEventListener('input', () => {
   const search = filter.value.trim().toLocaleLowerCase('es');
   let visible = 0;
@@ -63,5 +64,13 @@ filter.addEventListener('input', () => {
     card.hidden = !matches;
     if (matches) visible += 1;
   });
-  noResults.hidden = visible !== 0;
+  searchStatus.textContent = search && !visible ? 'No encontramos ese producto. Consulta nuestro portafolio.' : '';
+});
+
+const menuButton = document.querySelector('.menu-button');
+const navigation = document.querySelector('#products-nav');
+menuButton.addEventListener('click', () => {
+  const isOpen = navigation.classList.toggle('is-open');
+  menuButton.setAttribute('aria-expanded', String(isOpen));
+  menuButton.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
 });
